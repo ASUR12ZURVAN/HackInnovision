@@ -1,11 +1,14 @@
-// let firstbatch = 5
-// let count = firstbatch
+//document.getElementById("Count").innerText = 5
 
-// console.log(firstbatch);
 
-let myage = 35
-let humantodog = 7
+let count = 0
+console.log(count)
 
-let mydogage = myage * humantodog
 
-console.log(mydogage);
+
+
+
+
+
+
+

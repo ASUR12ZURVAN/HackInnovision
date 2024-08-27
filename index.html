@@ -3,23 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Items</title>
+    <title>Food Order</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="food-item cold-coffee">
-            <h2>Cold Coffee</h2>
+        <h1>Order Your Favorite Food</h1>
+        <div class="menu-item">
+            <p>Veg Maggie - $2</p>
+            <input type="number" id="maggie-quantity" placeholder="Quantity" min="0">
+            <button onclick="addToOrder(2, 'Veg Maggie')">Order</button>
         </div>
-        <div class="food-item oreo-shake">
-            <h2>Oreo Shake</h2>
+        <div class="menu-item">
+            <p>Bread Omelet - $5</p>
+            <input type="number" id="omelet-quantity" placeholder="Quantity" min="0">
+            <button onclick="addToOrder(5, 'Bread Omelet')">Order</button>
         </div>
-        <div class="food-item veg-maggi">
-            <h2>Veg Maggi</h2>
+        <div class="menu-item">
+            <p>Oreo Shake - $2.5</p>
+            <input type="number" id="shake-quantity" placeholder="Quantity" min="0">
+            <button onclick="addToOrder(2.5, 'Oreo Shake')">Order</button>
         </div>
-        <div class = "food-item bread-omlet">
-            <h2>Bread Omlet</h2>
+        <div class="menu-item">
+            <p>Cold Coffee - $3</p>
+            <input type="number" id="coffee-quantity" placeholder="Quantity" min="0">
+            <button onclick="addToOrder(3, 'Cold Coffee')">Order</button>
         </div>
+        <div class="menu-item">
+            <p>Veg Sandwich - $2</p>
+            <input type="number" id="sandwich-quantity" placeholder="Quantity" min="0">
+            <button onclick="addToOrder(2, 'Veg Sandwich')">Order</button>
+        </div>
+        <button id="finalize-button" onclick="finalizeOrder()">Finalize Order</button>
+
+        <!-- Hidden form to pass data to the confirmation page -->
+        <form id="order-form" action="confirmation.html" method="get" style="display: none;">
+            <input type="hidden" id="order-details" name="orderDetails">
+            <input type="hidden" id="total-amount" name="totalAmount">
+            <input type="hidden" id="total-with-tax" name="totalWithTax">
+        </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
