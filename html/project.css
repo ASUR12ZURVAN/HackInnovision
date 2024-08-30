@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    font-family:Arial;
+    border:border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.featured-dishes {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column; /* Arrange dishes vertically */
+    align-items: center;
+    gap: 20px;
+}
+
+.dish {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 800px; /* Limit the maximum width of the dish container */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Distributes the space between items */
+}
+
+.dish h3 {
+    flex: 1; /* Takes up some space */
+    text-align: left; /* Aligns the text to the left */
+    margin: 0;
+}
+
+.dish img {
+    width: 100px; /* Fixed width for the image */
+    height: 60px;
+    border-radius: 5px;
+    margin: 0 20px; /* Space around the image */
+}
+
+.dish p {
+    margin: 0;
+    flex: 0.5; /* Takes less space */
+}
+
+.order-button {
+    padding: 10px 20px;
+    background-color: #f47b20; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.restaurants {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.restaurants h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.restaurant-list {
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-around;
+    flex-wrap:nowrap;
+    width:100%;
+    
+}
+
+.restaurant {
+    flex:1 1 0;
+    max-width:300px;
+   
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.restaurant img {
+    width: 100%;
+    height:200px;
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.restaurant h3 {
+    font-size: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
